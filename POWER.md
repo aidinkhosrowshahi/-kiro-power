@@ -1,6 +1,7 @@
 ---
 name: aws-dev-best-practices
 displayName: AWS Development Best Practices
+version: 1.0.0
 description: Comprehensive AWS development standards, best practices, and guidelines for building secure, reliable, and performant applications
 keywords:
   - aws
