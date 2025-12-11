@@ -81,9 +81,10 @@ Before using these AWS development best practices, ensure you have:
    pip install aws-sam-cli
    ```
 
-4. **Set default S3 bucket** for SAM deployments:
+4. **Configure SAM deployment bucket** (if using SAM):
    ```bash
-   # Use this bucket: aws-sam-cli-managed-default-samclisourcebucket-1bwfr0kmzf3qz
+   # Configure your preferred S3 bucket for SAM deployments
+   sam deploy --guided
    ```
 
 ### How This Power Works
