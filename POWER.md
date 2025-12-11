@@ -21,9 +21,9 @@ This power provides curated guidance for AWS development across multiple domains
 - **Deployment Patterns**: CloudFront/S3 hosting, serverless architectures
 - **Development Workflow**: Git commit standards, automation guidelines
 
-## What's Included
+## Available Steering Files
 
-### Steering Files
+This power includes 12 comprehensive steering files:
 
 - **well-architected-context.md**: AWS Well-Architected Framework principles prioritizing security, reliability, and performance
 - **terraform_best_practices.md**: Terraform development and deployment standards for AWS
@@ -52,9 +52,43 @@ aws, development, best-practices, infrastructure, terraform, cloudformation, sam
 - Following AWS Well-Architected Framework principles
 - Implementing Infrastructure as Code best practices
 
-## Getting Started
+## Onboarding
 
-This power automatically includes all steering files in your context. The guidelines will be applied when:
+### Prerequisites
+
+Before using these AWS development best practices, ensure you have:
+
+- **AWS CLI** configured with appropriate credentials (`aws sso login`)
+- **Python 3.13** installed for backend development
+- **Node.js/npm** for React frontend development
+- **Infrastructure tools**: Terraform CLI or AWS SAM CLI for deployments
+- **Git** configured with proper commit message standards
+
+### Quick Setup
+
+1. **Configure AWS CLI**:
+   ```bash
+   aws sso login
+   ```
+
+2. **Verify Python version**:
+   ```bash
+   python --version  # Should be 3.13+
+   ```
+
+3. **Install SAM CLI** (for serverless):
+   ```bash
+   pip install aws-sam-cli
+   ```
+
+4. **Set default S3 bucket** for SAM deployments:
+   ```bash
+   # Use this bucket: aws-sam-cli-managed-default-samclisourcebucket-1bwfr0kmzf3qz
+   ```
+
+### How This Power Works
+
+This power automatically includes all steering files in your Kiro context. The guidelines will be applied when:
 
 - Creating new AWS infrastructure
 - Writing Python or React code
